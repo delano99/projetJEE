@@ -16,8 +16,40 @@ public class Session {
     @ManyToOne
     private Jeu jeu;
 
+    public Jeu getJeu() {
+        return jeu;
+    }
+
+    public void setJeu(Jeu jeu) {
+        this.jeu = jeu;
+    }
+
+    public GameRoom getGameRoom() {
+        return gameRoom;
+    }
+
+    public void setGameRoom(GameRoom gameRoom) {
+        this.gameRoom = gameRoom;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Time getStartHour() {
+        return startHour;
+    }
+
+    public void setStartHour(Time startHour) {
+        this.startHour = startHour;
+    }
+
     @ManyToOne
-    private GameRoom movieRoom;
+    private GameRoom gameRoom;
 
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date date;
@@ -39,31 +71,5 @@ public class Session {
         return jeu;
     }
 
-    public void setJeux(Jeu jeu) {
-        this.jeu = jeu;
-    }
 
-    public GameRoom getMovieRoom() {
-        return movieRoom;
-    }
-
-    public void setMovieRoom(GameRoom movieRoom) {
-        this.movieRoom = movieRoom;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public Time getStartHour() {
-        return startHour;
-    }
-
-    public void setStartHour(Time startHour) {
-        this.startHour = startHour;
-    }
 }
