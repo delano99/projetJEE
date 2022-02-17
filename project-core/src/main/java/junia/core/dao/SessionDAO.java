@@ -10,5 +10,5 @@ import java.util.List;
 public interface SessionDAO extends JpaRepository<Session, Long> {
 
     @Query("SELECT s FROM Session s where s.gameRoom.arcade.arcadeName = :arcadeName")
-    List<Session> findAllSessionsSpecificCinema(@Param("arcadeName") String arcadeName);
+    List<Session> findAllSessionsSpecificArcade(@Param("arcadeName") String arcadeName);
 }

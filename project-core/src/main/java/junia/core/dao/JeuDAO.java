@@ -8,8 +8,8 @@ import org.springframework.data.repository.query.Param;
 public interface JeuDAO extends JpaRepository<Jeu, Long> {
 
     @Query("SELECT j FROM Jeu j where j.id = :id ")
-        Jeu findFilm(@Param("id") long film_id);
+        Jeu findJeu(@Param("id") long jeu_id);
 
     @Query("SELECT j FROM Jeu j where j.name = :name ")
-        Jeu findFilmByName(@Param("name") String arcadeName);
+        Jeu findJeuByName(@Param("name") String arcadeName);
 }

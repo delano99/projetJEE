@@ -10,5 +10,5 @@ import java.util.List;
 public interface GameRoomDAO extends JpaRepository<GameRoom, Long> {
 
     @Query("SELECT m FROM GameRoom m where m.arcade.arcadeName = :arcadeName ")
-    List<GameRoom> getMovieRoomInCinema(@Param("arcadeName") String arcadeName);
+    List<GameRoom> getGameRoomInArcade(@Param("arcadeName") String arcadeName);
 }
