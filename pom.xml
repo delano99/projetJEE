@@ -11,6 +11,7 @@
     <modules>
         <module>project-core</module>
         <module>project-data</module>
+        <module>project-web</module>
     </modules>
 
 
