@@ -15,7 +15,7 @@ public class Jeu {
 
     private String name;
 
-    private String director;
+    private String production;
 
     private String genre;
 
@@ -43,12 +43,12 @@ public class Jeu {
         this.name = name;
     }
 
-    public String getDirector() {
-        return director;
+    public String getProduction() {
+        return production;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
+    public void setProduction(String production) {
+        this.production = production;
     }
 
     public String getGenre() {
