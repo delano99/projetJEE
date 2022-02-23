@@ -8,8 +8,7 @@ import junia.core.service.ArcadeService;
 import junia.core.service.GameRoomService;
 import junia.core.service.JeuService;
 import junia.core.service.SessionService;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.apache.log4j.BasicConfigurator;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext; 
 
 import java.sql.Time;
 import java.util.HashMap;

@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/project-core" />
     <file type="web" url="file://$PROJECT_DIR$/project-data" />
+    <file type="web" url="file://$PROJECT_DIR$/project-web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
