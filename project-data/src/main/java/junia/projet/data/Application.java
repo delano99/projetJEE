@@ -157,10 +157,10 @@ public class Application {
         return jeuMap;
     }
 
-    private static Jeu createJeu(String filmName, String production, String genre, int duration, final JeuService jeuService ) {
+    private static Jeu createJeu(String jeuName, String production, String genre, int duration, final JeuService jeuService ) {
 
         Jeu jeu = new Jeu();
-        jeu.setName(filmName);
+        jeu.setName(jeuName);
         jeu.setProduction(production);
         jeu.setGenre(genre);
         jeu.setDuration(duration);
