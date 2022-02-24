@@ -12,7 +12,7 @@ public class AppConfig {
 
     public static final String DB_HOST = "localhost:3306";
 
-    public static final String DB_SCHEMA = "poree";
+    public static final String DB_SCHEMA = "por";
 
     public static final String DB_USER = "root";
 

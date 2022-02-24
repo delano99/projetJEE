@@ -70,24 +70,24 @@ public class Application {
         sessions.put("Session 1", createSession(jeuMap.get("The Legend of Zelda: Ocarina of Time"), gameRoomMap.get("Room 1 PONG"), date, timeNoon, sessionService));
         sessions.put("Session 2", createSession(jeuMap.get("Metroid Dread"), gameRoomMap.get("Room 1 PONG"), date, timeNoon, sessionService));
         sessions.put("Session 3", createSession(jeuMap.get("The Legend of Zelda: Ocarina of Time"), gameRoomMap.get("Room 1 PONG"), date, timeAfterNoon, sessionService));
-        sessions.put("Session 4", createSession(jeuMap.get("PResident Evil Village"), gameRoomMap.get("Room 1 PONG"), date, timeEvening, sessionService));
+        sessions.put("Session 4", createSession(jeuMap.get("Resident Evil Village"), gameRoomMap.get("Room 1 PONG"), date, timeEvening, sessionService));
         sessions.put("Session 5", createSession(jeuMap.get("Psychonauts 2 "), gameRoomMap.get("Room 2 PONG"), date, timeNoon, sessionService));
         sessions.put("Session 6", createSession(jeuMap.get("The Legend of Zelda: Ocarina of Time"), gameRoomMap.get("Room 2 PONG"), date, timeNoon, sessionService));
         sessions.put("Session 7", createSession(jeuMap.get("Super Mario 3D World + Bowser's Fury"), gameRoomMap.get("Room 2 PONG"), date, timeAfterNoon, sessionService));
         sessions.put("Session 8", createSession(jeuMap.get("Metroid Dread"), gameRoomMap.get("Room 2 PONG"), date, timeEvening, sessionService));
-        sessions.put("Session 9", createSession(jeuMap.get("PResident Evil Village"), gameRoomMap.get("Room 3 PONG"), date, timeNoon, sessionService));
-        sessions.put("Session 10", createSession(jeuMap.get("PResident Evil Village"), gameRoomMap.get("Room 3 PONG"), date, timeNoon, sessionService));
+        sessions.put("Session 9", createSession(jeuMap.get("Resident Evil Village"), gameRoomMap.get("Room 3 PONG"), date, timeNoon, sessionService));
+        sessions.put("Session 10", createSession(jeuMap.get("Resident Evil Village"), gameRoomMap.get("Room 3 PONG"), date, timeNoon, sessionService));
         sessions.put("Session 11", createSession(jeuMap.get("Super Mario 3D World + Bowser's Fury"), gameRoomMap.get("Room 3 PONG"), date, timeAfterNoon, sessionService));
         sessions.put("Session 12", createSession(jeuMap.get("The Legend of Zelda: Ocarina of Time"), gameRoomMap.get("Room 3 PONG"), date, timeEvening, sessionService));
 
 
         sessions.put("Session 13", createSession(jeuMap.get("The Legend of Zelda: Ocarina of Time"), gameRoomMap.get("Room 1 Galaga"), date, timeNoon, sessionService));
-        sessions.put("Session 14", createSession(jeuMap.get("PResident Evil Village"), gameRoomMap.get("Room 1 Galaga"), date, timeNoon, sessionService));
+        sessions.put("Session 14", createSession(jeuMap.get("Resident Evil Village"), gameRoomMap.get("Room 1 Galaga"), date, timeNoon, sessionService));
         sessions.put("Session 15", createSession(jeuMap.get("The Legend of Zelda: Ocarina of Time"), gameRoomMap.get("Room 1 Galaga"), date, timeAfterNoon, sessionService));
         sessions.put("Session 16", createSession(jeuMap.get("Metroid Dread"), gameRoomMap.get("Room 1 Galaga"), date, timeEvening, sessionService));
         sessions.put("Session 17", createSession(jeuMap.get("Metroid Dread"), gameRoomMap.get("Room 2 Galaga"), date, timeNoon, sessionService));
-        sessions.put("Session 18", createSession(jeuMap.get("Psychonauts 2 "), gameRoomMap.get("Room 2 Galaga"), date, timeNoon, sessionService));
-        sessions.put("Session 19", createSession(jeuMap.get("Psychonauts 2 "), gameRoomMap.get("Room 2 Galaga"), date, timeAfterNoon, sessionService));
+        sessions.put("Session 18", createSession(jeuMap.get("Psychonauts 2"), gameRoomMap.get("Room 2 Galaga"), date, timeNoon, sessionService));
+        sessions.put("Session 19", createSession(jeuMap.get("Psychonauts 2"), gameRoomMap.get("Room 2 Galaga"), date, timeAfterNoon, sessionService));
         sessions.put("Session 20", createSession(jeuMap.get("Super Mario 3D World + Bowser's Fury"), gameRoomMap.get("Room 2 Galaga"), date, timeEvening, sessionService));
         sessions.put("Session 21", createSession(jeuMap.get("Metroid Dread"), gameRoomMap.get("Room 3 Galaga"), date, timeNoon, sessionService));
         sessions.put("Session 22", createSession(jeuMap.get("Super Mario 3D World + Bowser's Fury"), gameRoomMap.get("Room 3 Galaga"), date, timeNoon, sessionService));
@@ -102,8 +102,8 @@ public class Application {
         sessions.put("Session 30", createSession(jeuMap.get("Super Mario 3D World + Bowser's Fury"), gameRoomMap.get("Room 2 Gradius"), date, timeNoon, sessionService));
         sessions.put("Session 31", createSession(jeuMap.get("Super Mario 3D World + Bowser's Fury"), gameRoomMap.get("Room 2 Gradius"), date, timeAfterNoon, sessionService));
         sessions.put("Session 32", createSession(jeuMap.get("Psychonauts 2"), gameRoomMap.get("Room 2 Gradius"), date, timeEvening, sessionService));
-        sessions.put("Session 33", createSession(jeuMap.get("PResident Evil Village"), gameRoomMap.get("Room 3 Gradius"), date, timeNoon, sessionService));
-        sessions.put("Session 34", createSession(jeuMap.get("PResident Evil Village"), gameRoomMap.get("Room 3 Gradius"), date, timeNoon, sessionService));
+        sessions.put("Session 33", createSession(jeuMap.get("Resident Evil Village"), gameRoomMap.get("Room 3 Gradius"), date, timeNoon, sessionService));
+        sessions.put("Session 34", createSession(jeuMap.get("Resident Evil Village"), gameRoomMap.get("Room 3 Gradius"), date, timeNoon, sessionService));
         sessions.put("Session 35", createSession(jeuMap.get("Metroid Dread"), gameRoomMap.get("Room 3 Gradius"), date, timeAfterNoon, sessionService));
         sessions.put("Session 36", createSession(jeuMap.get("The Legend of Zelda: Ocarina of Time"), gameRoomMap.get("Room 3 Gradius"), date, timeEvening, sessionService));
 
@@ -150,7 +150,7 @@ public class Application {
     private static Map<String, Jeu> registerJeu(JeuService jeuService) {
         Map<String, Jeu> jeuMap = new HashMap<>();
         jeuMap.put("The Legend of Zelda: Ocarina of Time", createJeu("The Legend of Zelda: Ocarina of Time", "Electronic Arts", "Action-Aventure", 1415, jeuService));
-        jeuMap.put("PResident Evil Village ", createJeu("Resident Evil Village ", "Capcom ", "Horreur", 2000, jeuService));
+        jeuMap.put("Resident Evil Village ", createJeu("Resident Evil Village", "Capcom ", "Horreur", 2000, jeuService));
         jeuMap.put("Metroid Dread", createJeu("Metroid Dread", "MercurySteam Entertainment ", "Science-Fiction", 3000, jeuService));
         jeuMap.put("Super Mario 3D World + Bowser's Fury", createJeu("Super Mario 3D World + Bowser's Fury", "Nintendo EPD, NST", "Aventure", 2507, jeuService));
         jeuMap.put("Psychonauts 2 ", createJeu("Psychonauts 2 ", "Double Fine Productions", "Aventure", 4000, jeuService));
