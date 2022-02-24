@@ -17,10 +17,10 @@ import java.util.stream.Collectors;
 @Path("/arcade")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class ArcadeControllerAPI implements RestController {
+public class ArcadeControllerApi implements RestController {
     private ArcadeService arcadeService;
 
-    public ArcadeControllerAPI(ArcadeService arcadeService) {
+    public ArcadeControllerApi(ArcadeService arcadeService) {
         this.arcadeService = arcadeService;
     }
 

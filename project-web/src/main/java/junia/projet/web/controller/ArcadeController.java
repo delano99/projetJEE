@@ -3,7 +3,6 @@ package junia.projet.web.controller;
 import org.springframework.stereotype.Controller;
 import junia.core.entity.Arcade;
 import junia.core.service.ArcadeService;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
