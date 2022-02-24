@@ -8,8 +8,7 @@ import junia.core.service.ArcadeService;
 import junia.core.service.GameRoomService;
 import junia.core.service.JeuService;
 import junia.core.service.SessionService;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.apache.log4j.BasicConfigurator;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext; 
 
 import java.sql.Time;
 import java.util.HashMap;
@@ -158,10 +157,10 @@ public class Application {
         return jeuMap;
     }
 
-    private static Jeu createJeu(String filmName, String production, String genre, int duration, final JeuService jeuService ) {
+    private static Jeu createJeu(String jeuName, String production, String genre, int duration, final JeuService jeuService ) {
 
         Jeu jeu = new Jeu();
-        jeu.setName(filmName);
+        jeu.setName(jeuName);
         jeu.setProduction(production);
         jeu.setGenre(genre);
         jeu.setDuration(duration);

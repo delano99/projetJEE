@@ -1,7 +1,7 @@
 package junia.core.dao;
 
 import junia.core.entity.Arcade;
-import org.springframework.data.jpa.repository.*;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 

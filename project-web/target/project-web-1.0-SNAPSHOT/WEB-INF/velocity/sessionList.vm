@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Projet JEE DELANO RAYAN</title>
+
+    <link href="../webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../">Home</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="jumbotron">
+
+        <h1>SESSIONS</h1>
+
+    </div>
+
+
+    <table class="table table-striped">
+        <th>date</th>
+        <th>start hour</th>
+        <th>Title</th>
+        <th></th>
+        #foreach($session in $sessions)
+            <tr>
+
+                <td>$session.date</td>
+
+                <td>$session.startHour</td>
+
+                <td>$session.jeu.name</td>
+
+                <td> <a href="../jeuInfo/$session.jeu.id" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-right"></span></a> </td>
+            </tr>
+        #end
+    </table>
+</div>
+
+
+</body>
+</html>

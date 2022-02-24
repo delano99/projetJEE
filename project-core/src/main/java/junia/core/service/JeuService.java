@@ -27,7 +27,7 @@ public class JeuService {
         return jeuDAO.findJeu(id);
     }
 
-    public Jeu findFilmByName(String arcadeName){
+    public Jeu findJeuByName(String arcadeName){
         return jeuDAO.findJeuByName(arcadeName);
     }
 }

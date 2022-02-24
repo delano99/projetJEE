@@ -24,7 +24,7 @@ public class SessionService {
         sessionDAO.save(session);
     }
 
-    public List<Session> findAllSessionsSpecificCinema(String arcadeName){
+    public List<Session> findAllSessionsSpecificArcade(String arcadeName){
         return sessionDAO.findAllSessionsSpecificArcade(arcadeName);
     }
 }
