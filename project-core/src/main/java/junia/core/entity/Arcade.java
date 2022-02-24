@@ -1,15 +1,12 @@
 package junia.core.entity;
 
 import javax.persistence.*;
-import java.sql.Date;
-import java.sql.Time;
 import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.springframework.format.annotation.DateTimeFormat;
+
 
 @Entity
-@JsonIgnoreProperties({"gameRoom"})
+@JsonIgnoreProperties({"gameRooms"})
 public class Arcade {
 
     @Id

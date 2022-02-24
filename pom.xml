@@ -14,10 +14,54 @@
         <module>project-web</module>
     </modules>
 
-
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.kongchen</groupId>
+                <artifactId>swagger-maven-plugin</artifactId>
+                <version>3.1.8</version>
+                <configuration>
+                    <apiSources>
+                        <apiSource>
+                            <springmvc>false</springmvc>
+                            <locations>junia.project.web.controllerAPI</locations>
+                            <schemes>http</schemes>
+                            <host>projetJEE.com</host>
+                            <basePath>/api</basePath>
+                            <info>
+                                <title>Project JEE 2022</title>
+                                <version>v1</version>
+                                <description>Projet JEE DELANO RAYAN</description>
+                            </info>
+                            <outputFormats>json</outputFormats>
+                            <swaggerDirectory>./</swaggerDirectory>
+                        </apiSource>
+                    </apiSources>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.2.11</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
